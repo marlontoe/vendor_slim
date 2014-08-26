@@ -191,5 +191,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Terminal Emulator
 PRODUCT_COPY_FILES +=  \
-    vendor/carbon/proprietary/Term.apk:system/app/Term.apk \
-    vendor/carbon/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
+    vendor/slim/proprietary/Term.apk:system/app/Term.apk \
+    vendor/slim/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
