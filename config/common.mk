@@ -62,6 +62,12 @@ PRODUCT_COPY_FILES += \
     vendor/slim/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit \
     vendor/slim/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+# frandom support
+PRODUCT_COPY_FILES += \
+    vendor/slim/prebuilt/common/lib/modules/frandom.ko:system/modules/frandom.ko \
+    vendor/carbon/prebuilt/common/etc/init.d/22frandom:system/etc/init.d/22frandom \
+    vendor/carbon/prebuilt/common/etc/xbin/ftest:system/etc/xbin/ftest
+
 # Workaround for NovaLauncher zipalign fails
 PRODUCT_COPY_FILES += \
     vendor/slim/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
