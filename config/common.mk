@@ -69,8 +69,8 @@ PRODUCT_COPY_FILES += \
 # frandom support
 PRODUCT_COPY_FILES += \
     vendor/slim/prebuilt/common/lib/modules/frandom.ko:system/modules/frandom.ko \
-    vendor/carbon/prebuilt/common/etc/init.d/22frandom:system/etc/init.d/22frandom \
-    vendor/carbon/prebuilt/common/etc/xbin/ftest:system/etc/xbin/ftest
+    vendor/slim/prebuilt/common/etc/init.d/22frandom:system/etc/init.d/22frandom \
+    vendor/slim/prebuilt/common/etc/xbin/ftest:system/etc/xbin/ftest
 
 # Embed SuperUser
 SUPERUSER_EMBEDDED := true
