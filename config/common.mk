@@ -44,6 +44,10 @@ PRODUCT_COPY_FILES += \
 # PRODUCT_COPY_FILES += \
 #     vendor/slim/prebuilt/common/lib/libgif.so:system/lib/libgif.so
 
+# Workaround for NovaLauncher zipalign fails
+# PRODUCT_COPY_FILES += \
+#    vendor/slim/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
+
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
     vendor/slim/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
@@ -67,10 +71,6 @@ PRODUCT_COPY_FILES += \
     vendor/slim/prebuilt/common/lib/modules/frandom.ko:system/modules/frandom.ko \
     vendor/carbon/prebuilt/common/etc/init.d/22frandom:system/etc/init.d/22frandom \
     vendor/carbon/prebuilt/common/etc/xbin/ftest:system/etc/xbin/ftest
-
-# Workaround for NovaLauncher zipalign fails
-PRODUCT_COPY_FILES += \
-    vendor/slim/prebuilt/common/app/NovaLauncher.apk:system/app/NovaLauncher.apk
 
 # Embed SuperUser
 SUPERUSER_EMBEDDED := true
