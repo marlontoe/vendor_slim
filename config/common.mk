@@ -182,3 +182,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.modversion=$(SLIM_MOD_VERSION) \
     ro.slim.buildtype=$(SLIM_BUILD_TYPE)
 
+# Terminal Emulator
+PRODUCT_COPY_FILES +=  \
+    vendor/slim/proprietary/Term.apk:system/app/Term.apk \
+    vendor/slim/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
